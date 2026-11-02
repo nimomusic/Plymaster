@@ -28,7 +28,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenVideoModal }) =>
 
           <p className="mt-6 text-base sm:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl mx-auto text-balance">
             복잡한 작곡 고민, 프리미어 프로 영상 편집 스트레스는 이제 그만! <br className="hidden sm:inline" />
-            테마만 고르면 <strong>Suno 작곡(팩토리)</strong>부터 <strong>4K 플레이리스트 영상(스튜디오)</strong>까지 단 5분 만에 끝납니다.
+            테마만 고르면 <strong>Suno 작곡(팩토리)</strong>부터 <strong>플레이리스트 영상(스튜디오)</strong>까지 단 5분 만에 끝납니다.
           </p>
 
           {/* Core Action Buttons: KakaoTalk & Homepage */}

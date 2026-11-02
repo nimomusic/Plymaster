@@ -2,5 +2,7 @@
   "name": "플리마스터 (PlyMaster) - 팩토리 & 스튜디오",
   "description": "Suno AI 프롬프트·가사 자동 생성 엔진 팩토리와 무편집 원클릭 플레이리스트 영상 제작 스튜디오",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }
