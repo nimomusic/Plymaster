@@ -119,20 +119,26 @@ export const StudioDemoSection: React.FC<StudioDemoSectionProps> = ({ onOpenVide
 
           <div
             onClick={onOpenVideoModal}
-            className="relative rounded-xl aspect-[21/9] sm:aspect-[24/9] bg-slate-900 overflow-hidden flex items-center justify-center group cursor-pointer border border-slate-300"
+            className="relative rounded-xl aspect-[21/9] sm:aspect-[24/9] bg-slate-900 overflow-hidden flex items-center justify-center group cursor-pointer border border-slate-300 shadow-md"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900 to-emerald-950 opacity-90" />
-            <div className="absolute inset-0 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:20px_20px] opacity-15" />
+            {/* Real YouTube Video Thumbnail */}
+            <img
+              src="https://img.youtube.com/vi/dA_u1XKSd3I/hqdefault.jpg"
+              alt="플리마스터 스튜디오 실제 시연 영상 썸네일"
+              className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+              referrerPolicy="no-referrer"
+            />
+            <div className="absolute inset-0 bg-slate-950/60 group-hover:bg-slate-950/40 transition-colors" />
 
             <div className="relative z-10 text-center p-6">
-              <div className="w-16 h-16 rounded-full bg-emerald-600 group-hover:bg-emerald-500 group-hover:scale-110 active:scale-95 transition-all flex items-center justify-center mx-auto shadow-xl text-white mb-3">
+              <div className="w-16 h-16 rounded-full bg-emerald-600 group-hover:bg-emerald-500 group-hover:scale-110 active:scale-95 transition-all flex items-center justify-center mx-auto shadow-xl text-white mb-3 ring-4 ring-white/20">
                 <Play className="w-7 h-7 fill-white ml-1" />
               </div>
-              <h4 className="text-base sm:text-lg font-bold text-white">
-                옵션 선택부터 완성된 플레이리스트 영상 추출까지 (01:30)
+              <h4 className="text-base sm:text-lg font-bold text-white drop-shadow-md">
+                플리마스터 스튜디오 실제 시연 영상 (유튜브 바로보기)
               </h4>
-              <p className="text-xs text-slate-300 mt-1">
-                실제 프로그램에서 음원과 배경을 넣고 원클릭으로 렌더링하는 시연 영상입니다
+              <p className="text-xs text-slate-200 mt-1 drop-shadow-xs">
+                옵션 선택부터 완성된 플레이리스트 영상 추출까지 1초 만에 확인하세요
               </p>
             </div>
           </div>

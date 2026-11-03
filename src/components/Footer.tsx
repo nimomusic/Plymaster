@@ -30,13 +30,13 @@ export const Footer: React.FC = () => {
             <ExternalLink className="w-3 h-3 text-slate-500" />
           </a>
           <a
-            href="http://pf.kakao.com/_fxhzxeX/chat"
+            href="https://pf.kakao.com/_fxhzxeX/chat"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#FEE500] hover:underline flex items-center gap-1 font-semibold"
           >
             <MessageCircle className="w-3 h-3 fill-[#FEE500]" />
-            <span>카카오톡 1:1 오픈채팅</span>
+            <span>카카오톡 1:1 상담</span>
           </a>
         </div>
 

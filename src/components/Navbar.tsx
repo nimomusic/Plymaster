@@ -47,9 +47,9 @@ export const Navbar: React.FC = () => {
 
         {/* External Conversion Links: Homepage & KakaoTalk */}
         <div className="flex items-center gap-2.5 shrink-0">
-          {/* KakaoTalk Open Chat Button */}
+          {/* KakaoTalk Channel Chat Button */}
           <a
-            href="http://pf.kakao.com/_fxhzxeX/chat"
+            href="https://pf.kakao.com/_fxhzxeX/chat"
             target="_blank"
             rel="noopener noreferrer"
             className="px-3.5 py-2 text-xs font-bold text-[#191919] bg-[#FEE500] hover:bg-[#FDD800] active:scale-95 rounded-lg shadow-xs transition-all flex items-center gap-1.5"

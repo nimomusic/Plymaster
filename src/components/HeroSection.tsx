@@ -34,13 +34,13 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenVideoModal }) =>
           {/* Core Action Buttons: KakaoTalk & Homepage */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
             <a
-              href="http://pf.kakao.com/_fxhzxeX/chat"
+              href="https://pf.kakao.com/_fxhzxeX/chat"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3.5 text-sm font-extrabold text-[#191919] bg-[#FEE500] hover:bg-[#FDD800] active:scale-95 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center gap-2"
             >
               <MessageCircle className="w-4 h-4 fill-[#191919]" />
-              <span>카카오톡 1:1 오픈채팅 문의하기</span>
+              <span>카카오톡 1:1 상담 문의하기</span>
               <ArrowRight className="w-4 h-4" />
             </a>
 
