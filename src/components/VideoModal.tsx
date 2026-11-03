@@ -153,7 +153,7 @@ export const VideoModal: React.FC<VideoModalProps> = ({
 
               <div className="flex items-center gap-3">
                 <a
-                  href="https://open.kakao.com/o/ggTf7cci"
+                  href="http://pf.kakao.com/_fxhzxeX/chat"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-700 hover:text-blue-600 font-semibold flex items-center gap-1"
