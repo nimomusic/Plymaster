@@ -34,7 +34,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenVideoModal }) =>
           {/* Core Action Buttons: KakaoTalk & Homepage */}
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3.5">
             <a
-              href="https://open.kakao.com/o/ggTf7cci"
+              href="http://pf.kakao.com/_fxhzxeX/chat"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3.5 text-sm font-extrabold text-[#191919] bg-[#FEE500] hover:bg-[#FDD800] active:scale-95 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center gap-2"
