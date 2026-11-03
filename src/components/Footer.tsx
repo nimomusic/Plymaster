@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
             <ExternalLink className="w-3 h-3 text-slate-500" />
           </a>
           <a
-            href="https://open.kakao.com/o/ggTf7cci"
+            href="http://pf.kakao.com/_fxhzxeX/chat"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[#FEE500] hover:underline flex items-center gap-1 font-semibold"
