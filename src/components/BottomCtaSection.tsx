@@ -23,7 +23,7 @@ export const BottomCtaSection: React.FC = () => {
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl mx-auto">
           {/* KakaoTalk Open Chat Card Button */}
           <a
-            href="https://open.kakao.com/o/ggTf7cci"
+            href="http://pf.kakao.com/_fxhzxeX/chat"
             target="_blank"
             rel="noopener noreferrer"
             className="p-5 sm:p-6 rounded-2xl bg-[#FEE500] hover:bg-[#FDD800] active:scale-98 shadow-md hover:shadow-lg transition-all text-left flex items-center justify-between group"
