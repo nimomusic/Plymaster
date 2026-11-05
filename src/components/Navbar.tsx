@@ -66,7 +66,7 @@ export const Navbar: React.FC = () => {
             className="px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50/80 hover:bg-emerald-100 text-emerald-700 hover:text-emerald-800 transition-all flex items-center gap-1.5 border border-emerald-200 shrink-0"
             title="무료 Wav to MP3 변환기"
           >
-            <span>✨ WAV 변환기</span>
+            <span>✨ Wav to MP3</span>
             <span className="text-[10px] bg-emerald-600 text-white px-1 py-0.2 rounded font-bold">
               무료
             </span>
