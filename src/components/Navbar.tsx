@@ -1,5 +1,5 @@
 import React from 'react';
-import { ExternalLink, MessageCircle } from 'lucide-react';
+import { ExternalLink, MessageCircle, ShoppingBag } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   return (
@@ -21,27 +21,55 @@ export const Navbar: React.FC = () => {
         </a>
 
         {/* Clean, intuitive navigation links */}
-        <nav className="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-600">
-          <a href="#intro" className="hover:text-blue-600 transition-colors">
+        <nav className="hidden lg:flex items-center gap-5 text-sm font-semibold text-slate-600">
+          <a href="#intro" className="hover:text-blue-600 transition-colors shrink-0">
             소개
           </a>
-          <a href="#benefits" className="hover:text-blue-600 transition-colors">
+          <a href="#benefits" className="hover:text-blue-600 transition-colors shrink-0">
             핵심 혜택
           </a>
-          <a href="#factory" className="hover:text-blue-600 transition-colors flex items-center gap-1.5">
+          <a href="#factory" className="hover:text-blue-600 transition-colors flex items-center gap-1.5 shrink-0">
             <span>팩토리</span>
             <span className="text-[10px] bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded font-bold">
               AI 작곡
             </span>
           </a>
-          <a href="#studio" className="hover:text-blue-600 transition-colors flex items-center gap-1.5">
+          <a href="#studio" className="hover:text-blue-600 transition-colors flex items-center gap-1.5 shrink-0">
             <span>스튜디오</span>
             <span className="text-[10px] bg-emerald-50 text-emerald-600 px-1.5 py-0.5 rounded font-bold">
               영상 제작
             </span>
           </a>
-          <a href="#videos" className="hover:text-blue-600 transition-colors">
+          <a href="#videos" className="hover:text-blue-600 transition-colors shrink-0">
             시연 영상
+          </a>
+
+          {/* Additional Tool 1: AI Music Playground */}
+          <a
+            href="https://www.plymaster.co.kr/?view=pop"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-2.5 py-1 text-xs font-semibold rounded-lg bg-blue-50/80 hover:bg-blue-100 text-blue-700 hover:text-blue-800 transition-all flex items-center gap-1.5 border border-blue-200 shrink-0"
+            title="무료로 즐기는 AI음악 스트리밍 - AI음악 놀이터"
+          >
+            <span>🎧 AI 음악 놀이터</span>
+            <span className="text-[10px] bg-blue-600 text-white px-1 py-0.2 rounded font-bold">
+              무료
+            </span>
+          </a>
+
+          {/* Additional Tool 2: Free Wav to MP3 Converter */}
+          <a
+            href="https://wavtomp3-beta.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-2.5 py-1 text-xs font-semibold rounded-lg bg-emerald-50/80 hover:bg-emerald-100 text-emerald-700 hover:text-emerald-800 transition-all flex items-center gap-1.5 border border-emerald-200 shrink-0"
+            title="무료 Wav to MP3 변환기"
+          >
+            <span>✨ WAV 변환기</span>
+            <span className="text-[10px] bg-emerald-600 text-white px-1 py-0.2 rounded font-bold">
+              무료
+            </span>
           </a>
         </nav>
 
@@ -58,15 +86,15 @@ export const Navbar: React.FC = () => {
             <span>오픈 채팅방 입장</span>
           </a>
 
-          {/* Official Homepage Link */}
+          {/* Purchase Link Button */}
           <a
-            href="https://www.plymaster.co.kr"
+            href="https://litt.ly/plymaster"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:flex px-3.5 py-2 text-xs font-semibold text-slate-700 hover:text-blue-600 bg-slate-100 hover:bg-slate-200/80 active:scale-95 rounded-lg border border-slate-200 transition-all items-center gap-1.5"
+            className="px-3.5 py-2 text-xs font-bold text-white bg-blue-600 hover:bg-blue-500 active:scale-95 rounded-lg shadow-xs transition-all flex items-center gap-1.5"
           >
-            <span>공식 홈페이지</span>
-            <ExternalLink className="w-3.5 h-3.5 text-slate-400" />
+            <ShoppingBag className="w-3.5 h-3.5 text-blue-100" />
+            <span>구매하기</span>
           </a>
         </div>
       </div>
