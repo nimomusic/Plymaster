@@ -17,9 +17,9 @@ export const KeyBenefitsSection: React.FC = () => {
       badge: 'COST SAVINGS',
       badgeColor: 'text-emerald-700 bg-emerald-50 border-emerald-200',
       title: 'Suno 프롬프트 실패로 날리던 크레딧 0원',
-      highlight: '수백만 뷰 채널의 검증된 사운드 알고리즘',
+      highlight: '제작자가 일일이 검증한 사운드 알고리즘',
       description:
-        '어떤 영문 프롬프트를 넣어야 할지 몰라 버리던 비싼 Suno 크레딧은 이제 그만! 장르별 황금 비율로 실패 없이 고품질 곡만 뽑아냅니다.',
+        '어떤 영문 프롬프트를 넣어야 할지 몰라 버리던 비싼 Suno 크레딧은 이제 그만! 장르별 황금 비율로 실패 없이 고품질 곡만 뽑아냅니다. 마음에 들지 않는 부분은 제작자에게 AS요청가능!',
     },
     {
       icon: Clock,
@@ -37,7 +37,7 @@ export const KeyBenefitsSection: React.FC = () => {
       title: '주 1회에서 매일 1편 업로드로 알고리즘 장악',
       highlight: '제작 소요시간 220분 → 단 5분으로 단축!',
       description:
-        '속도가 곧 채널의 경쟁력입니다. 퇴근 후 가벼운 마음으로 클릭 몇 번이면 매일 새로운 플레이리스트를 업로드해 채널 구독자를 빠르게 늘릴 수 있습니다.',
+        '속도가 곧 채널의 경쟁력입니다. 퇴근 후 가벼운 마음으로 클릭 몇 번이면 매일 새로운 플레이리스트를 업로드해 보다 쉽게 경쟁력을 확보 할 수 있습니다.',
     },
   ];
 

@@ -31,7 +31,7 @@ export default function App() {
         title: '플리마스터 팩토리 (Suno AI 작곡 자동화) 시연 영상',
         description:
           '테마 선택 시 내장 알고리즘이 Suno 전용 프롬프트와 가사를 생성하고, Suno 웹 플랫폼에 직접 자동 입력까지 완료되는 실제 시연 영상입니다.',
-        defaultUrl: '', // Ready for the creator to paste their YouTube/Loom video link
+        defaultUrl: 'https://youtu.be/gbEG7X1hmBk',
       });
     } else {
       setVideoModalConfig({

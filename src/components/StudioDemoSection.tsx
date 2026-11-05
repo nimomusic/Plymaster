@@ -90,7 +90,7 @@ export const StudioDemoSection: React.FC<StudioDemoSectionProps> = ({ onOpenVide
             <div className="pt-2">
               <div className="flex items-center gap-2 text-xs font-semibold text-slate-500">
                 <CheckCircle2 className="w-4 h-4 text-emerald-600" />
-                <span>영상 편집 지식 0% 지원 · 자막/타임스탬프 100% 자동 추출</span>
+                <span>영상 편집 지식 0% · 타임스탬프 100% 자동 추출</span>
               </div>
             </div>
           </div>

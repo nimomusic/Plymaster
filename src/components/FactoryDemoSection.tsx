@@ -42,7 +42,7 @@ export const FactoryDemoSection: React.FC<FactoryDemoSectionProps> = ({ onOpenVi
                 <h4 className="text-sm font-bold text-slate-900">원하는 테마 선택</h4>
               </div>
               <p className="text-xs text-slate-600 pl-9">
-                비 오는 카페, 심야 드라이브, 새벽 공부 등 대중들이 열광하는 장르 알고리즘 중 원하는 테마를 누릅니다.
+                대중들이 열광하는 장르 알고리즘 중 원하는 테마를 선택합니다.
               </p>
             </div>
 
@@ -81,12 +81,17 @@ export const FactoryDemoSection: React.FC<FactoryDemoSectionProps> = ({ onOpenVi
           {/* Right: Prominent Demo Video Frame */}
           <div className="lg:col-span-7">
             <div className="bg-white rounded-2xl border border-slate-200 shadow-lg p-3 sm:p-4">
-              <div className="relative rounded-xl aspect-video bg-slate-900 overflow-hidden flex flex-col justify-between p-5 group cursor-pointer"
+              <div className="relative rounded-xl aspect-video bg-slate-900 overflow-hidden flex flex-col justify-between p-5 group cursor-pointer border border-slate-300 shadow-md"
                 onClick={onOpenVideoModal}
               >
-                {/* Background decorative music graphic */}
-                <div className="absolute inset-0 bg-gradient-to-tr from-blue-950 via-slate-900 to-indigo-950 opacity-90" />
-                <div className="absolute inset-0 bg-[radial-gradient(#3b82f6_1px,transparent_1px)] [background-size:16px_16px] opacity-20" />
+                {/* Real YouTube Video Thumbnail */}
+                <img
+                  src="https://img.youtube.com/vi/gbEG7X1hmBk/hqdefault.jpg"
+                  alt="플리마스터 팩토리 실제 시연 영상 썸네일"
+                  className="absolute inset-0 w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  referrerPolicy="no-referrer"
+                />
+                <div className="absolute inset-0 bg-slate-950/60 group-hover:bg-slate-950/40 transition-colors" />
 
                 {/* Top Badge */}
                 <div className="relative z-10 flex items-center justify-between">
@@ -94,43 +99,34 @@ export const FactoryDemoSection: React.FC<FactoryDemoSectionProps> = ({ onOpenVi
                     FACTORY DEMO VIDEO
                   </span>
                   <span className="text-[11px] font-medium text-slate-300 bg-black/50 px-2 py-0.5 rounded backdrop-blur-xs">
-                    01:15 시연 영상
+                    유튜브 바로보기
                   </span>
                 </div>
 
                 {/* Center Big Play Button */}
                 <div className="relative z-10 text-center my-auto">
-                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-blue-600/90 group-hover:bg-blue-500 group-hover:scale-110 active:scale-95 transition-all flex items-center justify-center mx-auto shadow-xl text-white">
+                  <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-blue-600 group-hover:bg-blue-500 group-hover:scale-110 active:scale-95 transition-all flex items-center justify-center mx-auto shadow-xl text-white ring-4 ring-white/20">
                     <Play className="w-7 h-7 sm:w-9 sm:h-9 fill-white ml-1" />
                   </div>
-                  <h3 className="text-base sm:text-lg font-bold text-white mt-3 group-hover:text-blue-300 transition-colors">
+                  <h3 className="text-base sm:text-lg font-bold text-white mt-3 drop-shadow-md">
                     플리마스터 팩토리 실제 구동 시연 영상
                   </h3>
-                  <p className="text-xs text-slate-300 mt-1">
-                    클릭하여 테마 선택 및 Suno 자동 입력 과정을 직접 확인하세요
+                  <p className="text-xs text-slate-200 mt-1 drop-shadow-xs">
+                    클릭하여 테마 선택 및 Suno 자동 입력 과정을 1초 만에 확인하세요
                   </p>
                 </div>
 
                 {/* Bottom Bar */}
-                <div className="relative z-10 flex items-center justify-between text-xs text-slate-400 border-t border-white/10 pt-3">
+                <div className="relative z-10 flex items-center justify-between text-xs text-slate-300 border-t border-white/10 pt-3">
                   <span>알고리즘 기반 프롬프트 생성 시연</span>
-                  <span className="text-blue-400 font-semibold group-hover:underline flex items-center gap-1">
+                  <span className="text-blue-300 font-semibold group-hover:underline flex items-center gap-1">
                     <span>영상 재생하기</span>
-                    <Play className="w-3 h-3 fill-blue-400" />
+                    <Play className="w-3 h-3 fill-blue-300" />
                   </span>
                 </div>
               </div>
 
-              <div className="mt-3 flex items-center justify-between px-2 text-xs text-slate-500">
-                <span>※ 실제 작업 화면을 1분 내외로 간결하게 요약한 영상입니다.</span>
-                <button
-                  type="button"
-                  onClick={onOpenVideoModal}
-                  className="text-blue-600 font-semibold hover:underline"
-                >
-                  시연 영상 링크 등록 및 확인
-                </button>
-              </div>
+
             </div>
           </div>
         </div>

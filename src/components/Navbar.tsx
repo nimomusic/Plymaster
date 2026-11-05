@@ -47,15 +47,15 @@ export const Navbar: React.FC = () => {
 
         {/* External Conversion Links: Homepage & KakaoTalk */}
         <div className="flex items-center gap-2.5 shrink-0">
-          {/* KakaoTalk Channel Chat Button */}
+          {/* KakaoTalk Open Chat Button */}
           <a
-            href="https://pf.kakao.com/_fxhzxeX/chat"
+            href="https://open.kakao.com/o/ggTf7cci"
             target="_blank"
             rel="noopener noreferrer"
             className="px-3.5 py-2 text-xs font-bold text-[#191919] bg-[#FEE500] hover:bg-[#FDD800] active:scale-95 rounded-lg shadow-xs transition-all flex items-center gap-1.5"
           >
             <MessageCircle className="w-3.5 h-3.5 fill-[#191919]" />
-            <span>카카오톡 상담</span>
+            <span>오픈 채팅방 입장</span>
           </a>
 
           {/* Official Homepage Link */}

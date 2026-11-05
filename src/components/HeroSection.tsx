@@ -27,8 +27,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenVideoModal }) =>
           </h1>
 
           <p className="mt-6 text-base sm:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl mx-auto text-balance">
-            복잡한 작곡 고민, 프리미어 프로 영상 편집 스트레스는 이제 그만! <br className="hidden sm:inline" />
-            테마만 고르면 <strong>Suno 작곡(팩토리)</strong>부터 <strong>플레이리스트 영상(스튜디오)</strong>까지 단 5분 만에 끝납니다.
+            테마만 고르면 <strong>Suno 작곡(팩토리)</strong>부터 <strong>플레이리스트 영상(스튜디오)</strong>까지 <br />
+            단 5분 만에 끝납니다.
           </p>
 
           {/* Core Action Buttons: KakaoTalk & Homepage */}
@@ -76,7 +76,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onOpenVideoModal }) =>
                 "테마만 선택하면 Suno 작곡·작사부터 자동 입력까지 끝!"
               </p>
               <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6">
-                각 곡을 제작하는 테마별 황금 알고리즘이 내장되어 있어, 사용자가 테마를 누르고 실행하면 수노(Suno)에 최적화된 프롬프트와 가사를 자동으로 만들고 수노에 직접 입력까지 완료해 줍니다.
+                각 곡을 제작하는 테마별 황금 알고리즘이 내장되어 있어, 사용자가 테마를 누르고 실행하면 수노(Suno)에 최적화된 프롬프트와 가사를 자동으로 만들고 수노에 직접 입력까지 완료해 줍니다. 현재 테마팩에 없는 테마팩을 원하시면 위 '카카오톡 1:1 상담 문의하기 -&gt;'를 클릭해 주세요.
               </p>
             </div>
 
