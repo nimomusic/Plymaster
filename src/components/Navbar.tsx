@@ -28,20 +28,39 @@ export const Navbar: React.FC = () => {
           <a href="#benefits" className="hover:text-blue-600 transition-colors shrink-0">
             핵심 혜택
           </a>
-          <a href="#factory" className="hover:text-blue-600 transition-colors flex items-center gap-1.5 shrink-0">
+          <a
+            href="https://pf-brown-eight.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-600 transition-colors flex items-center gap-1.5 whitespace-nowrap shrink-0"
+          >
             <span>팩토리</span>
             <span className="text-[10px] bg-blue-50 text-blue-600 px-1.5 py-0.5 rounded font-bold">
               AI 작곡
             </span>
           </a>
-          <a href="#studio" className="hover:text-blue-600 transition-colors flex items-center gap-1.5 shrink-0">
+          <a
+            href="https://github.com/nimomusic/plymasterstudio/releases/download/plymaster/PlyMaster.Studio.Setup.exe"
+            download="PlyMaster.Studio.Setup.exe"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="PlyMaster Studio 설치 파일 다운로드"
+            className="hover:text-blue-600 transition-colors flex items-center gap-1.5 whitespace-nowrap shrink-0"
+          >
             <span>스튜디오</span>
             <span className="text-[10px] bg-emerald-50 text-emerald-600 px-1.5 py-0.5 rounded font-bold">
               영상 제작
             </span>
           </a>
-          <a href="#videos" className="hover:text-blue-600 transition-colors shrink-0">
-            시연 영상
+          <a
+            href="https://github.com/nimomusic/plymasterstudio/releases/download/plymaster/sunolyric.zip"
+            download="sunolyric.zip"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Suno 가사 다운로더 다운로드"
+            className="hover:text-blue-600 transition-colors whitespace-nowrap shrink-0"
+          >
+            가사 다운로더
           </a>
 
           {/* Additional Tool 1: AI Music Playground */}
