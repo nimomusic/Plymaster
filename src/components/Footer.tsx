@@ -1,7 +1,20 @@
 import React from 'react';
-import { ExternalLink, MessageCircle } from 'lucide-react';
+import { ExternalLink, MessageCircle, Mail } from 'lucide-react';
+import {
+  LanguageCode,
+  SiteTranslation,
+  KAKAO_CHANNEL_CHAT_URL,
+  CONTACT_EMAIL,
+} from '../data/translations';
 
-export const Footer: React.FC = () => {
+interface FooterProps {
+  language: LanguageCode;
+  t: SiteTranslation['footer'];
+}
+
+export const Footer: React.FC<FooterProps> = ({ language, t }) => {
+  const isKorean = language === 'ko';
+
   return (
     <footer className="py-12 px-6 bg-slate-900 text-slate-400 text-xs">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
@@ -14,7 +27,7 @@ export const Footer: React.FC = () => {
             <span>PlyMaster</span>
           </div>
           <p className="text-slate-400 text-center md:text-left">
-            플리마스터 팩토리(AI 작곡) & 스튜디오(영상 제작) 올인원 솔루션
+            {t.tagline}
           </p>
         </div>
 
@@ -26,18 +39,28 @@ export const Footer: React.FC = () => {
             rel="noopener noreferrer"
             className="hover:text-white transition-colors flex items-center gap-1"
           >
-            <span>공식 홈페이지</span>
+            <span>{t.homepage}</span>
             <ExternalLink className="w-3 h-3 text-slate-500" />
           </a>
-          <a
-            href="https://pf.kakao.com/_fxhzxeX/chat"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-[#FEE500] hover:underline flex items-center gap-1 font-semibold"
-          >
-            <MessageCircle className="w-3 h-3 fill-[#FEE500]" />
-            <span>카카오톡 1:1 상담</span>
-          </a>
+          {isKorean ? (
+            <a
+              href={KAKAO_CHANNEL_CHAT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#FEE500] hover:underline flex items-center gap-1 font-semibold"
+            >
+              <MessageCircle className="w-3 h-3 fill-[#FEE500]" />
+              <span>{t.contactLink}</span>
+            </a>
+          ) : (
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="text-[#FEE500] hover:underline flex items-center gap-1 font-semibold"
+            >
+              <Mail className="w-3 h-3" />
+              <span>{t.contactLink}</span>
+            </a>
+          )}
         </div>
 
         {/* Copyright */}
