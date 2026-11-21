@@ -49,7 +49,7 @@ export default function App() {
         : '';
 
   return (
-    <div className="min-h-screen bg-[#F8FAFC] text-slate-800 flex flex-col selection:bg-blue-600 selection:text-white">
+    <div className="min-h-screen bg-[#F8FAFC] text-slate-800 flex flex-col overflow-x-clip selection:bg-blue-600 selection:text-white">
       {/* 1. Clean Top Bar with G10 Language Selector */}
       <Navbar
         language={language}

@@ -46,13 +46,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
             </span>
           </h1>
 
-          <p className="mt-6 text-base sm:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl mx-auto text-balance">
+          <p className="mt-6 text-base sm:text-xl text-slate-600 font-normal leading-relaxed max-w-3xl mx-auto text-balance">
             {t.subtitlePart1}
-            <strong>{t.subtitleFactory}</strong>
+            {t.subtitleFactory}
             {t.subtitlePart2}
-            <strong>{t.subtitleStudio}</strong>
-            {t.subtitlePart3} <br />
-            {t.subtitleLine2}
+            {t.subtitleStudio}
+            {t.subtitlePart3}
+            {t.subtitleLine2 && (
+              <>
+                <br />
+                {t.subtitleLine2}
+              </>
+            )}
           </p>
 
           {/* Core Action Button: KakaoTalk (KR) or Email (Non-KR) */}
